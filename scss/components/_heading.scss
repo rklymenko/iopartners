@@ -1,0 +1,12 @@
+.heading__title {
+  color: $blue-dark;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px){
+
+  .heading__title {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,44 @@
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+
+  &.logo {
+    height: 40px;
+    width: 106px;
+    transition: all 0.25s;
+  }
+
+  &--share {
+    width: 19px;
+    height: 19px;
+  }
+
+  &--twitter {
+    width: 18px;
+    height: 15px;
+  }
+
+  &--facebook {
+    width: 10px;
+  }
+}
+
+@media (min-width: 992px){
+  .site-header .icon-svg {
+    &.logo {
+      height: 60px;
+      width: 159px;
+    }
+  }
+
+  .page-scroll {
+    .site-header .icon-svg {
+      &.logo {
+        height: 40px;
+        width: 106px;
+      }
+    }
+  }
+}

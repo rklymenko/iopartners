@@ -1,0 +1,90 @@
+.site-header {
+  padding: 20px 0;
+  transition: .35s;
+  background: $white;
+}
+
+.menu-toggle {
+  padding: 0;
+  position: relative;
+  z-index: $zindex-fixed + 2;
+}
+
+
+.menu-toggle__line {
+  display: block;
+  height: 2px;
+  background: $blue-dark;
+  width: 33px;
+  border-radius: 10px;
+  transition: .35s;
+}
+
+.menu-toggle__line:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-template-page-contact-us-php {
+  background: $blue-dark;
+}
+
+.page-template-page-contact-us-php,
+.home {
+  .site-header {
+    background: none;
+  }
+  .logo a {
+    color: $white
+  }
+  .menu-toggle__line {
+    background: $white;
+  }
+}
+
+.open-menu  {
+  .menu-toggle__line {
+    background: $white;
+    &:nth-child(1) {
+      transform: translateY(11px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(-11px) rotate(-45deg);
+    }
+
+  }
+
+  &.page-scroll .menu-toggle__line {
+    background: $white!important;
+  }
+}
+
+
+.page-scroll .site-header {
+  background: $white;
+
+  .logo a {
+    color: $blue-dark
+  }
+
+  .menu-toggle__line {
+    background: $blue-dark
+  }
+}
+
+.page-template-page-contact-us-php.page-scroll .site-header,
+.home.page-scroll .site-header {
+  background: $blue-dark;
+
+  .logo a {
+    color: $white
+  }
+
+  .menu-toggle__line {
+    background: $white;
+  }
+}

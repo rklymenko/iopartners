@@ -1,0 +1,50 @@
+
+.btn{
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px 41px;
+  outline: none;
+  box-shadow: none!important;
+  font-weight: 500;
+
+  .icon-svg {
+    margin-right: 5px;
+  }
+
+  &-border {
+    background: none;
+    background-color: transparent;
+    border: 1px solid $black;
+
+    &:hover {
+      background: $white;
+      background-color: $white;
+    }
+  }
+
+  &-none {
+    background: none;
+    background-color: transparent;
+  }
+
+  &-inverse {
+    background: $white;
+    background-color:$white;
+    color: $blue-dark;
+    border-color: $white;
+
+    &:hover,
+    &:focus {
+      background: none;
+      background-color:transparent;
+      color: $white
+    }
+  }
+
+  &-primary {
+    background: $blue-dark;
+    border-color: $blue-dark;
+    color: $white
+  }
+}

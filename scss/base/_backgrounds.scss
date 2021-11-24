@@ -1,0 +1,46 @@
+.bg-blue-dark {
+  background: $blue-dark;
+}
+
+.bg-blue{
+  background: $blue;
+
+  &-overflow{
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 1000%;
+      height: 100%;
+      background: $blue;
+      z-index: -1;
+    }
+  }
+
+}
+
+.bg-pink {
+  background: $pink;
+
+  &-overflow{
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 1000%;
+      height: 100%;
+      background: $pink;
+      z-index: -1;
+    }
+  }
+}
+
+.bg-gray {
+  background: $gray;
+}

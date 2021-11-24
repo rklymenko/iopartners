@@ -1,0 +1,50 @@
+.contacts-item__title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: $font-bold;
+}
+
+h2.contact-person-title {
+  color: $blue-dark;
+  margin-bottom: 30px;
+}
+
+.contacts-item__text {
+  margin-bottom: 35px;
+
+  a {
+    color: $white
+  }
+}
+
+.contacts-right {
+  iframe{
+    min-height: 366px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts-list {
+    float: right;
+  }
+}
+
+@each $breakpoint, $size in $contacts-max-widths {
+
+  @media (min-width: #{$breakpoint}){
+    .contacts-left {
+      margin-left: calc((((#{$size} * 33.333) / 100 ) / 2 - 30px) * -1);
+
+      .contacts-list {
+        width: calc((#{$size} * 33.333) / 100 );
+      }
+    }
+
+    .contacts-right {
+    //  margin-left: calc((((#{$size} * 33.333) / 100 ) / 2 - 15px) * -1);
+      flex: 0 0  calc((((#{$size} * 33.333) / 100 ) / 2 - 30px) + 50%);
+      max-width: calc((((#{$size} * 33.333) / 100 ) / 2 - 30px) + 50%);
+    }
+  }
+}

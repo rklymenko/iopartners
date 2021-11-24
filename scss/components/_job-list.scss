@@ -1,0 +1,17 @@
+.job-item {
+  color: $blue-dark;
+  margin-bottom: 60px;
+
+  a {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .job-title {
+    font-weight: 500;
+  }
+
+  .meta {
+    margin-bottom: 30px;
+  }
+}

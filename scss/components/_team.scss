@@ -1,0 +1,35 @@
+.team-info {
+  margin-bottom: 80px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: $font-bold;
+  }
+}
+
+
+.team-contacts {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 18px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__item .icon-svg {
+    margin-right: 10px;
+  }
+
+
+}
+
+.team-contacts__item--phone a::before {
+  content: '';
+  background: url(../#phone);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}

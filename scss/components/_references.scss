@@ -1,0 +1,90 @@
+.references-carousel {
+  padding: 45px 16px 24px;
+  margin: 56px 0 ;
+
+  &-dots {
+    text-align: center;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px;
+    background: $blue;
+    transition: .3s;
+
+    &:hover,
+    &.active {
+      background: $blue-dark;
+    }
+  }
+
+  .references-item {
+    &__text {
+      margin-bottom: 120px;
+    }
+  }
+
+  .owl-carousel .owl-item img{
+    width: auto;
+    max-height: 64px;
+  }
+}
+
+.references-item {
+  padding: 80px 0;
+
+  &__title {
+    color: $blue-dark;
+    font-weight: 700;
+    font-family: $font-bold;
+    margin-bottom: 30px;
+  }
+
+  p:last-child{
+    margin-bottom: 0;
+  }
+
+  &__column {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__separator {
+    height: 1px;
+    background:$black;
+    width: 100px;
+    margin: 40px 0;
+  }
+
+  &__logo img {
+    max-height: 48px;
+  }
+
+}
+
+@media (min-width: 768px){
+  .references-carousel {
+    padding: 80px 65px 55px;
+    margin: 0 0 56px;
+  }
+
+  .references-item {
+    &__separator {
+      height: 120px;
+      width: 1px;
+      margin: auto;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .references-item {
+    &__logo img {
+      max-height: 64px;
+    }
+  }
+}

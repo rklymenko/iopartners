@@ -1,0 +1,158 @@
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $zindex-fixed + 1;
+  transform: scale(.9);
+  transition: .35s;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+
+  &-inner {
+    height: 100%;
+    width: 100%;
+  }
+
+  &-right {
+
+    flex: 1;
+
+    &__inner {
+      margin-left: calc((100% - 180px)/2);
+    }
+
+    a {
+      &::before {
+        content: '';
+        width: 0;
+        height: 4px;
+        transition: .3s;
+        background: $pink;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+
+        &::before {
+          width: 40px;
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+
+  &-left{
+    line-height: 10px;
+    padding: 20px 0;
+
+    a {
+      font-weight: bold;
+      font-size: 18px;
+      color: $blue-dark;
+      font-family: $font-bold;
+    }
+  }
+
+  &__contacts {
+    line-height: 15px;
+
+    a {
+      color: $white;
+      font-size: 18px;
+      font-family: $font-bold;
+    }
+  }
+
+  &__navigation {
+    margin-bottom: 40px;
+    line-height: 28px;
+
+    a {
+      color: $white;
+      font-weight: bold;
+      font-size: 28px;
+      transition: .3s;
+      font-family: $font-bold;
+
+    }
+  }
+  li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+
+.open-menu .menu-wrap {
+  transform: none;
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+@media (min-width: 768px){
+  .menu-wrap {
+    &-left{
+      flex: 0 0 36%;
+      max-width: 480px;
+      padding-bottom: 150px;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .menu-wrap {
+    &-left{
+      a {
+        font-size: 24px;
+      }
+    }
+
+    &__contacts {
+      a {
+        font-size: 24px;
+      }
+    }
+
+    &__navigation {
+      a {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px){
+  .menu-wrap {
+
+    &__contacts {
+      line-height: 24px;
+
+      a {
+        font-weight: 700;
+      }
+    }
+
+    &-left {
+      line-height: 24px;
+    }
+
+    &__navigation {
+        margin-bottom: 65px;
+        line-height: 40px;
+
+      a {
+        font-size: 40px;
+      }
+    }
+  }
+}

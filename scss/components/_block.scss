@@ -1,0 +1,73 @@
+.site-block {
+  $sb: &;
+  padding: 65px 0;
+
+  &--welcome {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &--about {
+    padding-bottom: 200px;
+
+    a {
+      color: $white;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: underline;
+      position:relative;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+  }
+
+  &--team {
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+
+  &--practices {
+    .practices__img {
+      margin: -220px 0 65px;
+    }
+  }
+
+  &--relatednews .card {
+    margin-top: -50px;
+  }
+
+  &#{$sb}--teaminfo {
+    padding: 80px 0 0;
+  }
+
+  &--reviews {
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &--jobslist {
+    .heading__title {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+@media (min-width: 992px){
+  .site-block {
+    padding: 100px 0;
+
+    &--practices {
+      .practices__img {
+        margin: -200px 0 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.welcome-inner {
+  min-height: 450px;
+  padding: 50px 0 ;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-family: $font-bold;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.welcome-video {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  &::before {
+    content: '';
+    background: linear-gradient(312.82deg, rgba(42, 51, 74, 0.2) 21.32%, rgba(42, 51, 74, 0.6) 50.69%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.welcome-video video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px){
+
+  .welcome-inner {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 72px;
+      line-height: 80px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+}

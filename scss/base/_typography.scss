@@ -1,0 +1,130 @@
+@import "../utilities/mixins";
+
+a {
+  color: $blue-dark
+}
+
+b, strong,
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: $font-bold;
+}
+
+blockquote {
+  margin: 40px 0 24px 0;
+  border: none;
+  padding: 0px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+
+  &::before {
+    display: flex;
+    content: '\201C';
+    align-items: center;
+    align-content: center;
+    font-size: 60px;
+    color: $blue-dark;
+    height: 2px;
+  }
+
+  &::after {
+    content: '\201C';
+    display: block;
+    font-size: 60px;
+    color: $blue-dark;
+    transform: rotate(180deg);
+    margin-top: 4px;
+    height: 11px;
+  }
+
+  cite {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    text-align: right;
+
+    &:before {
+      content: ' - ';
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  blockquote {
+    margin: 40px 0 24px 40px;
+  }
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+
+  /*rtl:ignore*/
+  float: left;
+
+  /*rtl:ignore*/
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.alignright {
+
+  /*rtl:ignore*/
+  float: right;
+
+  /*rtl:ignore*/
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+.fullwidth-img {
+  position: relative;
+  overflow: hidden;
+  margin: 60px 0;
+}
+
+@media (min-width: 768px){
+  .fullwidth-img {
+    height: 400px;
+
+    img {
+      position: absolute!important;
+      left: 0;
+      top: 0;
+      width: 100%;
+      object-fit: cover;
+      margin: auto;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1440px){
+  .fullwidth-img {
+    height: 500px;
+  }
+}
+
+svg.hidden {
+  display: none;
+}
+
+.img-responsive {
+  @extend %img_responsive;
+}
+
+.text-link  {
+  text-decoration: underline;
+  color: $blue-dark
+}

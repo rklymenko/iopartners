@@ -1,0 +1,17 @@
+.breadcrumb {
+  color: $breadcrumbs;
+  font-size: 16px;
+  margin: 25px 0;
+  font-weight: 400;
+
+  &_last{
+    font-weight: 900;
+  }
+}
+
+.page-template-page-contact-us-php {
+  .breadcrumb,
+  .breadcrumb a{
+    color: $white;
+  }
+}

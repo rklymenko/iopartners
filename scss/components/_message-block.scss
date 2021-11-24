@@ -1,0 +1,42 @@
+.message-wrap  {
+  min-height: 300px;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.message-wrap h4 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-family: $font-bold;
+}
+
+.message-form {
+  display: none;
+  margin-top: 40px;
+  width: 100%;
+  opacity: 0;
+}
+
+.page-template-page-contact-us-php,
+.single-job {
+  .message-form {
+    opacity: 1;
+    display: block!important;
+  }
+}
+
+
+@media (min-width: 768px){
+  .message-wrap  {
+    h4 {
+      font-size: 32px;
+    }
+    .btn {
+      width: auto;
+    }
+  }
+
+}

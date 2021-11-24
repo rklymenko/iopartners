@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('fonts/NeueHaasUnica/NeueHaasUnica-Light.eot');
+  src: local('Neue Haas Unica Light'), local('fonts/NeueHaasUnica/NeueHaasUnica-Light'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Light.woff2') format('woff2'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Light.woff') format('woff'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('fonts/NeueHaasUnica/NeueHaasUnica-Regular.eot');
+  src: local('Neue Haas Unica Regular'), local('fonts/NeueHaasUnica/NeueHaasUnica-Regular'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Regular.woff2') format('woff2'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Regular.woff') format('woff'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('fonts/NeueHaasUnica/NeueHaasUnica-ExtraBold.eot');
+  src: local('Neue Haas Unica Extra Bold'), local('fonts/NeueHaasUnica/NeueHaasUnica-ExtraBold'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-ExtraBold.woff2') format('woff2'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-ExtraBold.woff') format('woff'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('fonts/NeueHaasUnica/NeueHaasUnica-Black.eot');
+  src: local('Neue Haas Unica Black'), local('fonts/NeueHaasUnica/NeueHaasUnica-Black'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Black.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Black.woff2') format('woff2'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Black.woff') format('woff'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica';
+  src: url('fonts/NeueHaasUnica/NeueHaasUnica-Medium.eot');
+  src: local('Neue Haas Unica Medium'), local('fonts/NeueHaasUnica/NeueHaasUnica-Medium'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Medium.woff2') format('woff2'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Medium.woff') format('woff'),
+  url('fonts/NeueHaasUnica/NeueHaasUnica-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Roman.eot');
+  src: local('Neue Haas Grotesk Display Pro 55 Roman'), local('fonts/NeueHaasGrotesk/NeueHaasDisplay-Roman'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Roman.woff') format('woff'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold.eot');
+  src: local('Neue Haas Grotesk Display Pro 75 Bold'), local('fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold.woff') format('woff'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu.eot');
+  src: local('Neue Haas Grotesk Display Pro 65 Medium'), local('fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu.woff') format('woff'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Mediu.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Light.eot');
+  src: local('Neue Haas Grotesk Display Pro 45 Light'), local('fonts/NeueHaasGrotesk/NeueHaasDisplay-Light'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Light.woff') format('woff'),
+  url('fonts/NeueHaasGrotesk/NeueHaasDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

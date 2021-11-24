@@ -1,0 +1,283 @@
+.card {
+  margin-bottom: 40px;
+  transition: .35s;
+
+  a:not(.btn){
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .team-contacts__item a {
+    font-weight: 400;
+  }
+
+  &-text {
+    color: $black;
+    margin: 20px 0;
+  }
+
+  &-img-top {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.card--practice {
+  padding: 30px;
+  height: 100%;
+  min-height: 276px;
+
+  .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .card-body {
+    height: 100%;
+  }
+
+  &-image {
+    height: 100%;
+    background-position: center;
+    overflow: hidden;
+    min-height: 240px;
+    //max-height: 276px;
+  }
+}
+
+.meta {
+  color: $blue-dark;
+  font-weight: 400;
+
+  &__date {
+    font-size: 16px;
+  }
+
+  &__position {
+    font-size: 18px;
+  }
+
+  &__item {
+    .icon-svg {
+      margin-right: 15px;
+    }
+  }
+}
+
+.card--team {
+  margin-bottom: 60px;
+
+  .card-title {
+    font-size: 24px;
+    color: $blue-dark;
+  }
+
+}
+
+.card--news {
+  margin-bottom: 80px;
+
+  .card-title,
+  .card-title a{
+    font-size: 32px;
+    line-height: 32px;
+    color: $blue-dark;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .card-title {
+    margin: 0;
+  }
+
+  .card-text,
+  .card-text a {
+    color: $blue-dark;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  a.text-link {
+    font-weight: 500;
+  }
+}
+
+.card--article-big {
+
+  margin-bottom: 120px;
+
+  .card-title {
+    font-size: 34px;
+    line-height: 48px;
+    color: $blue-dark;
+    margin-bottom: 25px;
+  }
+
+  .card-text {
+    font-size: 20px;
+    line-height: 28px;
+    color: $text-color;
+    margin: 30px 0 45px;
+  }
+
+   .card-body {
+
+     .btn {
+       width: 100%;
+     }
+
+     &::before {
+       content: '';
+       background: $blue;
+       top: -80px;
+       bottom: -80px;
+       left: -110px;
+       display: block;
+       width: 1000%;
+       position: absolute;
+       z-index: -1;
+     }
+   }
+
+}
+
+.single-practices .card--article-big,
+.single-team .card--article-big {
+  margin-bottom: 0;
+
+  .card-body {
+    margin-top: 60px;
+    padding-left: 0;
+
+    &::before {
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  .meta {
+    margin-bottom: 30px;
+
+    &__position{
+      font-size: 24px;
+      font-weight: 700;
+      font-family: $font-bold;
+      color: $blue-dark
+    }
+  }
+}
+
+.single-practices .card--article-big{
+  margin-bottom: 20px;
+}
+
+.single-team .card--article-big,
+.single-practices .card--article-big,
+.single-post .card--article-big {
+  .card-body::before {
+    background: $pink;
+  }
+}
+
+.card-img {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DBE3E9;
+    z-index: -1;
+    transition: .35s;
+  }
+}
+
+@media (min-width: 768px){
+
+  .card--team {
+    &:hover {
+      transform: translate(-20px, 20px);
+
+      .card-img::after {
+        transform: translate(20px, -20px);
+      }
+    }
+  }
+  .single-practices .card--article-big,
+  .single-team .card--article-big {
+    margin-bottom: 80px;
+
+    .card-body {
+      &::before {
+        left: -45px
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: 992px){
+  .card--article-big {
+    .card-title {
+      font-size: 48px;
+      line-height: 64px;
+    }
+    .card-body {
+      padding-left: 85px;
+    }
+  }
+
+}
+@media (min-width: 992px){
+  .card--practice {
+    margin-bottom: 40px;
+  }
+  .card--article-big {
+    .card-body {
+
+      .btn {
+        width: auto;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1200px){
+
+  .card {
+    &-content {
+      margin-bottom: 0;
+    }
+  }
+
+  .card.card--team {
+    max-width: 270px;
+  }
+
+  .team-wrap:nth-child(3n+2) .card{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-wrap:nth-child(3n+3) .card{
+    float: right;
+  }
+
+  .card--practice {
+   // max-height: 276px;
+
+    &-image {
+
+    }
+  }
+
+}

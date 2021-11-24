@@ -1,0 +1,54 @@
+/*!
+Theme Name: io-partners
+Theme URI: //io-partners
+Author: vdweb.ru
+Author URI: //io-partners
+Description: io-partners
+Version: 1.0.2
+Text Domain: io-partners
+*/
+
+
+@import 'utilities/variables';
+@import 'vendors/bootstrap';
+@import 'vendors/bootstrap/dropdown';
+@import 'vendors/owl-carousel/owl.carousel';
+
+@import 'base';
+@import 'layout';
+
+@import 'components';
+@import 'page';
+
+
+body {
+  //@include scrollbars(4px, $gray, $blue-dark);
+
+  color: $text-color;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 80px;
+  overflow-x: hidden;
+  font-family: $font-regular;
+  font-weight: 300;
+
+
+  &.home {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 991px){
+  body {
+    &.open-menu {
+      overflow: hidden;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
