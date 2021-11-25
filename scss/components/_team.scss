@@ -9,21 +9,18 @@
   }
 }
 
-
 .team-contacts {
   margin-bottom: 50px;
   font-weight: 500;
   font-size: 18px;
 
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 8px; //20px
   }
 
   &__item .icon-svg {
     margin-right: 10px;
   }
-
-
 }
 
 .team-contacts__item--phone a::before {

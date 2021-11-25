@@ -15,7 +15,7 @@
                 if (has_post_thumbnail()){
                     $class = 'col-12 col-lg-6';
                     $thumb = wp_get_attachment_image_url( get_post_thumbnail_id(get_the_ID()), 'thumb_576_336' ); ?>
-                    <div class="col-12 col-lg-6 pr-lg-0">
+                    <div class="col-12 col-lg-6 pr-lg-0 d-flex align-items-center">
                         <img src="<?php echo $thumb ?>" class="card-img-top img-responsive mb-0 mx-auto" alt="<?php the_title() ?>">
                     </div>
                 <?php } ?>

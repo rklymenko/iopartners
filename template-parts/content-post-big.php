@@ -6,7 +6,7 @@
             if (has_post_thumbnail()){
 	            $class = 'col-12 col-lg-6 pr-lg-0';
 		        $thumb = wp_get_attachment_image_url( get_post_thumbnail_id(get_the_ID()), 'thumb_576_336' ); ?>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
                     <a href="<?php the_permalink() ?>">
                         <img src="<?php echo $thumb ?>" class="card-img-top img-responsive mb-lg-0 mx-auto" alt="<?php the_title() ?>">
                     </a>

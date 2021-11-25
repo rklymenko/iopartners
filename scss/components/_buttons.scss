@@ -1,11 +1,11 @@
 
-.btn{
+.btn {
   border-radius: 0;
   font-size: 18px;
-  line-height: 18px;
+  line-height: normal; //18px
   padding: 10px 41px;
   outline: none;
-  box-shadow: none!important;
+  box-shadow: none !important;
   font-weight: 500;
 
   .icon-svg {

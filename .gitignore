@@ -6,3 +6,8 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+.DS_Store
+package-lock.json
+package.json
+test.css
+test.css.map
