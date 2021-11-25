@@ -72,7 +72,7 @@
                     <svg class="img-responsive logo icon-svg"><use xlink:href="#logo"></use></svg>
                 </a>
             </div>
-            <div class="languages ml-auto d-none">
+            <div class="languages ml-auto">
                 <div class="dropdown">
                     <button class="btn btn-none dropdown-toggle" type="button">ENG</button>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
