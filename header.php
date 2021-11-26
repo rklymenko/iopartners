@@ -74,7 +74,20 @@
             </div>
             <div class="languages ml-auto">
                 <div class="dropdown">
-                    <button class="btn btn-none dropdown-toggle" type="button">ENG</button>
+                    <?php
+                    $languages_list = [
+                            'en_US' => 'ENG',
+                            'fi' => 'FIN',
+                            'sv_SE' => 'SWE'
+                    ];
+					$current_language = 'ENG';
+                    $current_locale = get_locale();
+
+                    if( array_key_exists( $current_locale, $languages_list ) ) {
+						$current_language = $languages_list[$current_locale];
+                    }
+                    ?>
+                    <button class="btn btn-none dropdown-toggle" type="button"><?php echo $current_language; ?></button>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">ENG</a></li>
                         <li><a class="dropdown-item" href="#">FIN</a></li>
